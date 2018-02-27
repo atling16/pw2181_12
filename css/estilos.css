@@ -13,24 +13,48 @@ color: white;
 header
 {
 border:1px solid black;
+/*margin-bottom: 20px;*/
 text-align: center;
 }
-
+main
+{
+	margin-top: 20px;
+}
 header nav ul li
 { 
-	background: orange;
-	border: 1px solid black;
+	background: #3399CC;
+	border: 1px solid white;
 	border-radius: 5px;
 	display: inline-block;
+	margin-right: 20px;
+	padding: 10px 20px;
+	/*margin: 0px 20px 0px 0px;*/
 	width: 90px;
 }
 
 
 header nav ul li:hover
 { 
-	background: black;
-	border: 1px solid orange;
+	background: gray;
+	border: 1px solid #3399CC;
 	border-radius: 5px;
 	display: inline-block;
 	width: 90px;
+}
+
+main article
+{
+	border: 1px dashed black;
+	display: inline-block;
+	vertical-align: top;
+	width: 32.65%;
+}
+
+
+footer
+{
+	border: 1px solid orange;
+	font-weight: bold; /*negritas*/
+	padding: 50px;
+	text-align: center;
 }
