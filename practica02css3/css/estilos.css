@@ -23,12 +23,12 @@ header input
 	/*Mueve el texto que esta alrededor*/
 	vertical-align: middle;
 }
-#terceraseccion article input [type="email"]
+#terceraseccion article input[type="email"]
 {
 border-radius: 5px;
 }
 
-#terceraseccion article input [type="button"]
+#terceraseccion article input[type="button"]
 {
 	background: #A4CD28;
     color: white;
