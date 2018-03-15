@@ -22,7 +22,7 @@ margin-left: 100px;
 }
 #seccion01 article
 {   
-
+    font-family: 'Roboto', sans-serif;
 	display: inline-block;
 	width: 19%;
 }
@@ -34,13 +34,14 @@ margin-left: 100px;
 
 #art1secc01
 {
+
  margin-left: 20px;
  margin-right: 15px;
 }
 
 #art1secc01 ul li
 {
-
+ font-family: 'Montserrat Alternates', sans-serif;
 list-style: none;
 
 }
