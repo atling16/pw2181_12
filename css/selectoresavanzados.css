@@ -1,0 +1,48 @@
+img[alt]
+{
+
+}
+/*Imagen con atributo SRC cadena exacta*/
+img[src="img/logo.png"]
+{
+	width: 400px;
+}
+img[src^="img/"]
+{
+	width: 150px;
+}
+/*imagen con atributo src en cualquier parte de la cadena*/
+img[src*="mg/"]
+{
+width: 1000px;
+}
+/*El caracter ~ indica que estos selectores estanseparados por espacios*/
+article[class~="resaltado"]
+{
+  border: 1px dashed blue;
+}
+
+article[class~="resaltado"]
+{
+  border: 1px dashed red;
+}
+
+article[class~="resaltado"]
+{
+  border: 1px dashed green;
+}
+
+selector de secundarios.
+seleccionar solamentelas <p>
+que se encuentran inmediatamaente
+despuesdel <div>
+div > p 
+{/*solo hijos directos*/
+	color:blue;
+}
+/*Todos los elementos <p> seran
+seleccionados*/
+div p
+{
+	color:red;
+}
