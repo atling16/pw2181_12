@@ -1,0 +1,131 @@
+body
+{
+	width: 1024px;
+}
+header img
+{
+width: 10%;
+}
+header nav span
+{
+	width: 5px;
+}
+header h1
+{  
+	color: blue;
+	float: right;
+	font-size: 18px;
+}
+header nav
+{
+	margin-left: 300px;
+	margin-top: -60px;
+}
+header nav ul li
+{
+display: inline-block;
+padding-left: 20px;
+
+}
+
+header nav ul li:nth-child(1) 
+{
+color:pink;
+}
+
+
+#seccion1 article
+{
+     padding-top:50px; 
+	display: inline-block;
+
+}
+
+#article1se1 img 
+{   
+    
+	position: left;
+    border-radius: 50%;
+	width: 60%;
+}
+#article2se1
+{   
+    
+    margin-right: 50px;
+	width: 35%;
+}
+
+#article2se1 #nav1
+{
+  
+  height: 100px;
+  width: 100px;
+  
+  text-align: center;
+  font-size:25px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: yellow;
+
+}
+
+#article2se1 nav
+{   
+
+	display: inline-block;
+}
+#article2se1 #nav2
+{
+
+  height: 100px;
+  width: 100px;
+
+  text-align: center;
+  font-size:25px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: blue;
+
+}
+#article2se1 #nav3
+{
+
+  height: 100px;
+  width: 100px;
+  
+  text-align: center;
+  font-size:25px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: pink;
+
+}
+#seccion2 h2
+{   
+	padding-top: 70px;
+	padding-left: 10px;
+	float:left;
+	color:red;
+	font-size: 15px;
+
+}
+/*#seccion2 h3
+{   
+     float:right;
+     padding-top:90px;   
+	font-size: 10px; 
+}
+*/
+#article1se2 img
+{
+padding-top: 50px;
+padding-right: 15px;
+width: 3%; 
+float: right;
+}
+
+
+
+{
+	position: right;
+}
