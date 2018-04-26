@@ -4,6 +4,7 @@ var marvel= function(){
 		var url="http://gateway.marvel.com/v1/public/characters?ts=1&apikey=67788e74df746a1523d8ebb504ee1008&hash=cf5ec9bfa5a156f031a69417cd0e012c&nameStartsWith=";
 		var cantidadComics = 0;
 		var comics = "";
+        var series = "";
         url = url + personaje;
         $.ajax({
         	dataType:"json",
@@ -12,11 +13,28 @@ var marvel= function(){
         		if(response.code == 200){
         			$("#foto").attr("src",response.data.results[0].thumbnail.path+"."+
         				response.data.results[0].thumbnail.extension);
-        		}
+                    $("#nombre").html(response.data.results[0].name);
+                    cantidadComics=response.data.results[0].comics.returned;
+                    for(var i=0;i<cantidadComics;i++){
+                        comics+=response.data.results[0].comics.items[i].name+"<br>";
+                    }
+                    $("#comics").html("comics: <br>"+comics);
         	}
         });
 
 			}
+
+
+            var teclaPersonaje = function(tecla){
+                //enter = 10+13
+                //Retorno de carro y avance d elinea
+
+                if (tecla.witch == 13){
+                    Buscar();
+
+                }
+            }
       $("#btnBuscar").on("click",Buscar);
+      $("#txtPersonaje").on("keypress",teclaPersonaje);
 }
 $(document).ready(marvel);
