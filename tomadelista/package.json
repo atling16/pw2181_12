@@ -1,0 +1,29 @@
+{
+  "name": "tomadelista",
+  "version": "1.0.0",
+  "description": "Toma de lista ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atling16/pw2181_12.git"
+  },
+  "keywords": [
+    "Lista",
+    "alumnos"
+  ],
+  "author": "Aaron Jeronimo Torres Acosta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atling16/pw2181_12/issues"
+  },
+  "homepage": "https://github.com/atling16/pw2181_12#readme",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-package": "^0.1.0",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.3.1"
+  }
+}
