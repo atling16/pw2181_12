@@ -9,10 +9,11 @@ var inicioApp = function(){
 		$.ajax({
 			cache:false,
 			type: "POST",
-			datatype:"json",
+			dataType:"json",
 			url: "php/validaentrada.php",
 			data: parametros,
 			success:function(response){
+				//alert(response.respuesta)
 				if (response.respuesta == true){
 					alert("Bienvenido");
 
