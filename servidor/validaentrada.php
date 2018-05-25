@@ -10,7 +10,10 @@ function valida(){
 	$resConsulta=mysqli_query($con,$consulta);
 	if(mysqli_num_row($resConsulta) > 0){
 		$respuesta = true;
-
+        while($regConsulta=mysqli_encode($resConsulta)){
+        	$nombre = utf8_encode($regConsulta["nombre"]);
+        	
+        }
 	}
 	$salidaJSON = array('respuesta' => $respuesta );
 	print json_encode($salidaJSON);
