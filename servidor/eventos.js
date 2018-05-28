@@ -72,13 +72,14 @@ var inicioApp = function(){
 		var usuario=$("#txtNombreUsuario").val();
 		var nombre =$("#txtNombre").val();
 		var clave  =$("#txtClaveUsuario").val();
+		var parametros="opc=guardarUsuario"+
+		               "&usuario="+usuario+
+                       "&clave="+clave+
+                       "&nombre="+nombre+
+                       "&aleatorio="+math.random();
+
 		if(usuario!="" && nombre!="" && clave!=""){
 
-			var buscarUsuario = function(){
-		var usuario = $("#txtNombreUsuario").val();
-		var parametros = "opc=buscarUsuario"+
-		                 "&usuario="+usuario+
-		                 "&aleatorio="+Math.random();
 		  if(usuario != ""){
 			$.ajax({
 			cache:false,
@@ -104,9 +105,33 @@ var inicioApp = function(){
 		
 
 	}
+
+          var Borrar = function(){
+          	var usuario = $("#txtNombreUsuario").val();
+          	var nombre  = $("txtNombre").val();
+          	var pregunta = prompt("segunro que de borrar a "+nombre+"?(si/no","no");
+
+          	if (pregunta != null && pregunta == "si"){
+          		//Aqui va el ajax........:)
+          	$.ajax({
+			cache:false,
+			type: "POST",
+			datatype:"json",
+			url: "php/borrarusuario.php",
+			data: parametros,
+			success:function(response){
+			if (response.respuesta == true){
+					
+
+					{
+			}
+      
+          }
+
     $("#btnAceptar").on("click",Aceptar);
     $("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
     $("#btnGuardar").on("click",Guardar);
+    $("#btnBorrar").on("click",borrar);
 
 }
 $(document).ready(inicioApp);
