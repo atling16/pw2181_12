@@ -127,11 +127,38 @@ var inicioApp = function(){
 			}
       
           }
+        var Listado = function(){
+        	$("main > section").hide("slow");
+        	$("#frmListado").show("slow");
+        	var parametros = "opc=listado"+
+        	                 "&aleatorio="+Math.random();
+        	  	$.ajax({
+			cache:false,
+			type: "POST",
+			datatype:"json",
+			url: "php/borrarusuario.php",
+			data: parametros,
+			success:function(response){
+			if (response.respuesta == true){
+					$("#tblListado").append(response.tabla);
+				}else{
 
+					alert("ocurrio un error, intente de nuevo");
+
+					{
+			},
+			error: fucntion(xrh,ajaxOpcions,thrownError){
+
+			}
+
+			
+        }
     $("#btnAceptar").on("click",Aceptar);
     $("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
     $("#btnGuardar").on("click",Guardar);
     $("#btnBorrar").on("click",borrar);
+    $("#btnListado").on("click",Listado);
+
 
 }
 $(document).ready(inicioApp);
